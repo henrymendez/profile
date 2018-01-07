@@ -5,17 +5,18 @@
     autocrlf = false
     safecrlf = true
 [alias]
+    br = branch
     co = checkout
     ci = commit
-    st = status
-    br = branch
-    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --color
-    f = fetch --all --prune
-    mff = merge --ff-only
-    type = cat-file -t
     dump = cat-file -p
+    f = fetch --all --prune
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --color
     lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
     lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+    mff = merge --ff-only
+    p = pull
+    st = status
+    type = cat-file -t
 [color]
     ui = auto
   [color "branch"]
