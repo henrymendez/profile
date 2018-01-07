@@ -11,5 +11,7 @@ My user profile across different operating systems, and small scripts I like.
 ## Setup
 * Run the setup script depending on the operating system.
 ```shell
-$ setup-scripts/bsd-setup.sh
+$ setup-scripts/bsd-setup.sh # FreeBSD or similar
+$ setup-scripts/osx-setup.sh # OSX
+$ setup-scripts/rpi-setup.sh # Raspbian/Ubuntu
 ```
