@@ -14,6 +14,7 @@ export LESS_TERMCAP_us=$(printf '\e[04;36m') # enter underline mode - cyan
 alias ap='ansible-playbook'
 alias a='ansible'
 alias grep='grep --color'
+alias zgrep='zgrep --color'
 alias g='git'
 alias ls='ls -G'
 alias mv='mv -v'
