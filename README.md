@@ -17,6 +17,6 @@ git clone --recurse-submodules https://github.com/henrymendez/profile
 * Run the setup script depending on the operating system.
 ```shell
 setup-scripts/bsd-setup.sh # FreeBSD or similar
-setup-scripts/osx-setup.sh # OSX
+setup-scripts/macos-setup.sh # macOS
 setup-scripts/rpi-setup.sh # Raspbian/Ubuntu
 ```

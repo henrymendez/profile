@@ -1,7 +1,7 @@
 #!/bin/sh
-# osx-setup.sh
+# macos-setup.sh
 #
-# Setup profile for OSX
+# Setup profile for macOS
 
 shout() { echo "$0: $*" >&2; }
 barf() { shout "$*"; exit 100; }
