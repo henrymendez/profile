@@ -2,6 +2,7 @@
 alias ap='ansible-playbook'
 alias a='ansible'
 alias g='git'
+alias diff='diff --color'
 alias grep='grep --color'
 alias egrep='egrep --color'
 alias zgrep='zgrep --color'

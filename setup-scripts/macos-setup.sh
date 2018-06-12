@@ -21,7 +21,7 @@ echo "Copying bin scripts...done!\r"
 
 # profile configs
 echo "Copying profile configs...\r\c"
-safe cp "$CWD"/configs/bash_profile "$HOME"/.bash_profile
+safe cp "$CWD"/configs/macos_bash_profile "$HOME"/.bash_profile
 safe cp "$CWD"/configs/gitconfig "$HOME"/.gitconfig
 safe cp "$CWD"/configs/tmux.conf "$HOME"/.tmux.conf
 echo "Copying profile configs...done!\r"
