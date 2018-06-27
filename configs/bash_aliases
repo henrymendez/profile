@@ -9,6 +9,7 @@ alias zgrep='zgrep --color'
 alias mv='mv -v'
 alias t='tmux'
 alias ta='tmux attach'
+alias curl='curl --silent'
 
 # Color man pages
 export LESS_TERMCAP_mb=$(printf '\e[01;31m') # enter blinking mode - red

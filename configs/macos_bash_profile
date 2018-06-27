@@ -20,6 +20,7 @@ alias zgrep='zgrep --color'
 alias g='git'
 alias ls='ls -G'
 alias mv='mv -v'
+alias curl='curl --silent'
 
 # macOS Agent Forwarding
 ssh-add
