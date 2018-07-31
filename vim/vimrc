@@ -5,3 +5,6 @@ set nu
 set tabstop=4 shiftwidth=4
 "256 colors for tmux
 set t_Co=256
+
+"<Ctrl-l> Redraws the screen and removes any search highlighting
+nnoremap <silent> <C-l> :nohl<CR><C-l>
