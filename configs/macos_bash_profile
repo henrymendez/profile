@@ -11,16 +11,26 @@ export LESS_TERMCAP_ue=$(printf '\e[0m') # leave underline mode
 export LESS_TERMCAP_us=$(printf '\e[04;36m') # enter underline mode - cyan
 
 # Aliases
-alias ap='ansible-playbook'
 alias a='ansible'
-alias diff='diff --color'
-alias grep='grep --color'
-alias egrep='egrep --color'
-alias zgrep='zgrep --color'
+alias ap='ansible-playbook'
+alias cat='pygmentize -f terminal256 -O style=monokai -g'
+alias curl='curl --silent'
+alias cp='cp -v'
 alias g='git'
+alias grep='grep --color'
+alias less='less -R'
 alias ls='ls -G'
 alias mv='mv -v'
-alias curl='curl --silent'
+alias t='tmux'
+export PATH="/usr/local/sbin:$PATH"
+export GOPATH=$HOME/go
+PATH=$PATH:$GOPATH/bin
 
-# macOS Agent Forwarding
+# ssh agent forwarding
 ssh-add
+
+# bash-completion
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
