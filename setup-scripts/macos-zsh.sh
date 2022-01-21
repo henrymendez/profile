@@ -10,6 +10,9 @@ safe() { "$@" || barf "cannot $*"; }
 # Setup script working directory
 CWD="$( cd "$(dirname "$0")" ; pwd )/.."
 
+# Install oh my zsh
+safe sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # bin scripts
 echo "Creating $HOME/bin ...\r\c"
 safe mkdir -pv "$HOME"/bin/
@@ -22,6 +25,8 @@ echo "Copying bin scripts...done!\r"
 # profile configs
 echo "Copying profile configs...\r\c"
 safe cp "$CWD"/configs/macos_bash_profile "$HOME"/.bash_profile
+safe cp "$CWD"/configs/zshrc "$HOME"/.zshrc
+safe cp "$CWD"/configs/refined-improved.zsh-theme "$HOME"/.oh-my-zsh/themes/refined.zsh-theme
 safe cp "$CWD"/configs/gitconfig "$HOME"/.gitconfig
 safe cp "$CWD"/configs/tmux.conf "$HOME"/.tmux.conf
 echo "Copying profile configs...done!\r"
