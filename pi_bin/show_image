@@ -1,9 +1,0 @@
-#!/bin/sh
-#
-# Takes a file as an argument and displays it on
-# the PiTFT screen.
-
-[ $# -eq 0 ] && echo "$0: Need to pass a filename"; exit 111
-sudo fbi -T 2 -d /dev/fb1 -noverbose -a $1
-
-exit 0;
